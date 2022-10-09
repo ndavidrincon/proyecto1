@@ -28,22 +28,22 @@ INSERT INTO `contrato` VALUES (1,'2022-01-01','2022-03-01',1);
 --
 -- Dumping data for table `documento`
 --
-insert into documento  values (1,'certificado afiliacion arl', 1);
-insert into documento  values (2,'certificado eps',2);
-insert into documento  values (3,'certificado afiliacion parafiscales',3);
-insert into documento  values (4,'certi aprobacion curso alturas',4);
-insert into documento  values (5,'certi aprobacion curso espacios confinados',5);
+insert into documento  values (1,'certificado afiliacion arl', 1,1);
+insert into documento  values (2,'certificado eps',2,1);
+insert into documento  values (3,'certificado afiliacion parafiscales',3,1);
+insert into documento  values (4,'certi aprobacion curso alturas',4,1);
+insert into documento  values (5,'certi aprobacion curso espacios confinados',5,1);
 
 
 --
 -- Dumping data for table `requerimiento`
 --
 
-INSERT INTO `requerimiento` VALUES (1,'arl');
-INSERT INTO `requerimiento` VALUES (2,'eps');
-INSERT INTO `requerimiento` VALUES (3,'parafiscales');
-INSERT INTO `requerimiento` VALUES (4,'formacion alturas');
-INSERT INTO `requerimiento` VALUES (5,'formacion espacios confinados');
+INSERT INTO `requerimiento` VALUES (1,'arl',1);
+INSERT INTO `requerimiento` VALUES (2,'eps',1);
+INSERT INTO `requerimiento` VALUES (3,'parafiscales',1);
+INSERT INTO `requerimiento` VALUES (4,'formacion alturas',1);
+INSERT INTO `requerimiento` VALUES (5,'formacion espacios confinados',1);
 
 --
 -- Dumping data for table `trabajador_contratista`
