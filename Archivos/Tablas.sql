@@ -39,7 +39,7 @@ CREATE TABLE contrato (
   fecha_inicio date NOT NULL,
   fecha_fin date NOT NULL,
   id_contratista int NOT NULL,
-  PRIMARY KEY (id,id_contratista),
+  PRIMARY KEY (id),
   FOREIGN KEY (id_contratista) REFERENCES contratista (id)
 ) ;
 
@@ -57,8 +57,10 @@ CREATE TABLE documento (
   id int NOT NULL AUTO_INCREMENT,
   nombre varchar(45) NOT NULL, 
   id_requerimiento int NOT NULL, 
+  id_trabajador int NOT NULL,
   PRIMARY KEY (id),
-  FOREIGN KEY (id_requerimiento) REFERENCES requerimiento (id)
+  FOREIGN KEY (id_requerimiento) REFERENCES requerimiento (id),
+  FOREIGN KEY (id_trabajador) REFERENCES trabajador_contrato (id)
 ) ;
 
 --
@@ -71,8 +73,10 @@ CREATE TABLE documento (
 DROP TABLE IF EXISTS requerimiento;
 CREATE TABLE requerimiento (
   id int NOT NULL AUTO_INCREMENT,
-  tipo varchar(45) NOT NULL,
-  PRIMARY KEY (id)
+    tipo varchar(45) NOT NULL,
+	id_contrato int NOT NULL,
+  PRIMARY KEY (id),
+FOREIGN KEY (id_contrato) REFERENCES contrato (id)
 ) ;
 
 --
