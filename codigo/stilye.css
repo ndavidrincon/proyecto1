@@ -25,10 +25,10 @@ body .container {
 .botones {
     border: .3rem solid white;
 }
-.boton-crear {
+#boton-crear {
     margin: .2rem;
 }
-.boton-ingresar {
+#boton-ingresar {
     margin: .3rem; 
     margin-left: .5rem;
 }
