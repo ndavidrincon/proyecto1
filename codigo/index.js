@@ -1,6 +1,6 @@
-let botonCrearUsuario = document.getElementById("boton-crear")
+const botonCrearUsuario = document.getElementById("boton-crear")
 botonCrearUsuario.addEventListener("click", opcionDeEntrada)
-let botonIngresarUsuario =document.getElementById("boton-ingresar")
+const botonIngresarUsuario =document.getElementById("boton-ingresar")
 botonIngresarUsuario.addEventListener("click", opcionDeEntrada)
 
 function opcionDeEntrada (){

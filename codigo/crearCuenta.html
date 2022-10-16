@@ -7,10 +7,30 @@
     <title>Crea tu cuenta</title>
 </head>
 <body>
-    <main>
-        <picture>
-            <img src="./logo.png" alt="Logotipo de la empresa con las siglas ASSTC">
-        </picture>
+    <main class="container">
+        <!-- <picture>
+            <img src="./logo.png" alt="Logotipo de la empresa con las siglas ASSTC" width="200px" height="220px">
+        </picture> -->
+        <section class="formulario">
+            <form class="formularioCrearCuenta" action="">
+                <label for="empresa">
+                    <span>¿Cual es el nombre de tu empresa?</span>
+                    <input type="text" id="empresa" placeholder="Nombre de empresa a registrar">
+                </label>
+                <label for="nitEmpresa">
+                    <span>¿Cual es el Nit de tu empresa?</span>
+                    <input type="number" id="nitEmpresa">
+                </label>
+                <label for="horario">
+                    <span>¿En que horario trabaja?</span>
+                    <input type="time" id="horario">
+                </label>
+                <label for="fechaDeAltaPlataforma">
+                    <span>Selecciona la fecha de hoy por favor</span>
+                    <input type="date" id="fechaDeAltaPlataforma">
+                </label>
+            </form>
+        </section>
     </main>
 </body>
 </html>
